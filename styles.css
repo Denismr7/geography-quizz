@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Chelsea+Market&display=swap");
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +28,7 @@ body {
 #navbar a {
   text-decoration: none;
   font-size: 2rem;
+  color: #3797a4;
 }
 
 main {
@@ -43,11 +48,55 @@ main {
 }
 
 main #quizzContainer {
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 40vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fbfbfb;
+  border: 1px solid #8ccbbe;
+  border-radius: 29px 29px 29px 29px;
   width: 65%;
 }
 
-main #quizzContainer .quizzContainer__title, main #quizzContainer .quizzContainer__text {
-  padding: 2%;
+main #quizzContainer .quizzContainer__title {
+  font-size: 4rem;
+  color: #3797a4;
+}
+
+main #quizzContainer .quizzContainer__text {
+  font-size: 1.6rem;
+  color: #3797a4;
+}
+
+main #quizzContainer .quizzContainer__input {
+  border: none;
+  width: 35rem;
+  height: 6rem;
+  padding-left: 2%;
+  background-color: #5fdde5;
+  color: white;
+  border-radius: 75px 75px 75px 75px;
+  font-size: 1.75rem;
+}
+
+main #quizzContainer .quizzContainer__btn {
+  position: relative;
+  top: 4rem;
+  border: none;
+  width: 11rem;
+  height: 5rem;
+  font-size: 2rem;
+  background-color: #fcf876;
+  border-radius: 75px 75px 75px 75px;
 }
 /*# sourceMappingURL=styles.css.map */

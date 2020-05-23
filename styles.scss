@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Chelsea+Market&display=swap');
+// Color palette
+$gray: #e4e4e4;
+$green1: #8ccbbe;
+$green2: #3797a4;
+$yellow: #fcf876;
+$lightblue: #5fdde5;
+
+html {
+    font-size: 62.5%;
+}
+
 
 body {
     margin: 0;
@@ -16,6 +27,7 @@ body {
     a {
         text-decoration: none;
         font-size: 2rem;
+        color: $green2;
     }
 }
 main {
@@ -25,10 +37,42 @@ main {
     align-items: center;
     justify-content: space-around;
     #quizzContainer {
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 40vh;
+        align-items: center;
+        background-color: lighten($color: $gray, $amount: 9);
+        border: 1px solid $green1;
+        border-radius: 29px 29px 29px 29px;
         width: 65%;
-        .quizzContainer__title, .quizzContainer__text {
-            padding: 2%;
+        .quizzContainer__title {
+            font-size: 4rem;
+            color: $green2;
+        }
+        .quizzContainer__text {
+            font-size: 1.6rem;
+            color: $green2;
+        }
+        .quizzContainer__input {
+            border: none;
+            width: 35rem;
+            height: 6rem;
+            padding-left: 2%;
+            background-color: $lightblue;
+            color: white;
+            border-radius: 75px 75px 75px 75px;
+            font-size: 1.75rem;
+        }
+        .quizzContainer__btn {
+            position: relative;
+            top: 4rem;
+            border: none;
+            width: 11rem;
+            height: 5rem;
+            font-size: 2rem;
+            background-color: $yellow;
+            border-radius: 75px 75px 75px 75px;
         }
     }
 }
