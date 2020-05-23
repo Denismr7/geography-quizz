@@ -41,11 +41,11 @@ main {
         flex-direction: column;
         justify-content: space-evenly;
         height: 40vh;
+        width: 50%;
         align-items: center;
         background-color: lighten($color: $gray, $amount: 9);
         border: 1px solid $green1;
         border-radius: 29px 29px 29px 29px;
-        width: 65%;
         .quizzContainer__title {
             font-size: 4rem;
             color: $green2;
@@ -59,10 +59,12 @@ main {
             width: 35rem;
             height: 6rem;
             padding-left: 2%;
-            background-color: $lightblue;
-            color: white;
+            border: 2px solid $lightblue;
+            background-color: lighten($color: $gray, $amount: 9);
             border-radius: 75px 75px 75px 75px;
             font-size: 1.75rem;
+            opacity: 0;
+            pointer-events: none;
         }
         .quizzContainer__btn {
             position: relative;
@@ -73,6 +75,11 @@ main {
             font-size: 2rem;
             background-color: $yellow;
             border-radius: 75px 75px 75px 75px;
+            transition: all 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                background-color: darken($color: $yellow, $amount: 15);
+            }
         }
     }
 }
