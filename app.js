@@ -107,6 +107,7 @@ const title = document.querySelector(".quizzContainer__title");
 const subtitle = document.querySelector(".quizzContainer__text");
 const input = document.querySelector(".quizzContainer__input");
 const btn = document.querySelector(".quizzContainer__btn");
+const optionsDiv = document.querySelector(".options");
 
 // Variables
 let currentQuestionNum = 1;
@@ -120,13 +121,32 @@ function generateRandomCountryName(db) {
 }
 
 function startQuizz() {
+        // Filter the db attending the user's choice
+        let tempDatabase;
+        let selectedContinent = document.querySelector('input[name="continents"]:checked').value;
+        if (selectedContinent === "Europa") {
+            tempDatabase = db.filter(element => element.continent.includes(selectedContinent));
+        } else if (selectedContinent === "Asia") {
+            tempDatabase = db.filter(element => element.continent.includes(selectedContinent));
+        }
+        else {
+            tempDatabase = db;
+        }
+
+        console.log(selectedContinent);
+        console.log(tempDatabase);
         score = 0;
         currentQuestionNum = 1;
-        randomCountryName = generateRandomCountryName(db);
+        numberOfQuestions = document.querySelector('input[name="questions"]:checked').value;
+        randomCountryName = generateRandomCountryName(tempDatabase);
+
+        //Styling
+        optionsDiv.style.display = "none";
         title.textContent = `Pregunta ${currentQuestionNum} de ${numberOfQuestions}`;
         subtitle.textContent = `¿Cuál es la capital de ${randomCountryName}?`
         input.style.opacity = 1;
         input.style.pointerEvents = "all";
+        btn.style.top = "4rem";
         btn.innerText = "Siguiente";
 
         //Remove EventListener when finished
