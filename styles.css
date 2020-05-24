@@ -17,18 +17,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #5fdde5;
   font-family: 'Balsamiq Sans', cursive;
-}
-
-#navbar {
-  width: 100%;
-  text-align: center;
-}
-
-#navbar a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #3797a4;
 }
 
 main {

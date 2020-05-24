@@ -114,6 +114,7 @@ let currentQuestionNum = 1;
 let randomCountryName;
 let score = 0;
 let numberOfQuestions = 5;
+let tempDatabase;
 
 // Functions
 function generateRandomCountryName(db) {
@@ -122,7 +123,6 @@ function generateRandomCountryName(db) {
 
 function startQuizz() {
         // Filter the db attending the user's choice
-        let tempDatabase;
         let selectedContinent = document.querySelector('input[name="continents"]:checked').value;
         if (selectedContinent === "Europa") {
             tempDatabase = db.filter(element => element.continent.includes(selectedContinent));
@@ -175,7 +175,7 @@ function nextQuestion() {
         }
         input.value = "";
         currentQuestionNum += 1;
-        randomCountryName = generateRandomCountryName(db);
+        randomCountryName = generateRandomCountryName(tempDatabase);
         title.textContent = `Pregunta ${currentQuestionNum} de ${numberOfQuestions}`;
         subtitle.textContent = `¿Cuál es la capital de ${randomCountryName}?`;
     } else {

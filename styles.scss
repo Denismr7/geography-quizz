@@ -19,16 +19,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: $lightblue;
     font-family: 'Balsamiq Sans', cursive;
-}
-#navbar {
-    width: 100%;
-    text-align: center;
-    a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: $green2;
-    }
 }
 main {
     height: 70vh;
