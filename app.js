@@ -146,7 +146,7 @@ function startQuizz() {
         subtitle.textContent = `¿Cuál es la capital de ${randomCountryName}?`
         input.style.opacity = 1;
         input.style.pointerEvents = "all";
-        btn.style.top = "4rem";
+        btn.style.top = "3.25rem";
         btn.innerText = "Siguiente";
 
         //Remove EventListener when finished

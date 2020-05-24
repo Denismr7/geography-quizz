@@ -54,8 +54,8 @@ main #quizzContainer {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fbfbfb;
-  border: 1px solid #8ccbbe;
-  border-radius: 29px 29px 29px 29px;
+  border: 3px solid #3797a4;
+  border-radius: 10px;
 }
 
 main #quizzContainer .options {
@@ -77,8 +77,9 @@ main #quizzContainer .options span {
 }
 
 main #quizzContainer .quizzContainer__title {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #3797a4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main #quizzContainer .quizzContainer__text {
@@ -104,7 +105,7 @@ main #quizzContainer .quizzContainer__btn {
   top: 2.5rem;
   border: none;
   width: 11rem;
-  height: 5rem;
+  padding: 1.25% 0;
   font-size: 2rem;
   background-color: #fcf876;
   border-radius: 75px 75px 75px 75px;

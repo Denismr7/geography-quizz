@@ -36,8 +36,8 @@ main {
         width: 50%;
         align-items: center;
         background-color: lighten($color: $gray, $amount: 9);
-        border: 1px solid $green1;
-        border-radius: 29px 29px 29px 29px;
+        border: 3px solid $green2;
+        border-radius: 10px;
         .options {
             display: flex;
             width: 50%;
@@ -51,8 +51,9 @@ main {
             }
         }
         .quizzContainer__title {
-            font-size: 4rem;
+            font-size: 5rem;
             color: $green2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .quizzContainer__text {
             font-size: 1.6rem;
@@ -75,7 +76,7 @@ main {
             top: 2.5rem;
             border: none;
             width: 11rem;
-            height: 5rem;
+            padding: 1.25% 0;
             font-size: 2rem;
             background-color: $yellow;
             border-radius: 75px 75px 75px 75px;
