@@ -46,6 +46,18 @@ main {
         background-color: lighten($color: $gray, $amount: 9);
         border: 1px solid $green1;
         border-radius: 29px 29px 29px 29px;
+        .options {
+            display: flex;
+            width: 50%;
+            margin-top: 2rem;
+            justify-content: space-evenly;
+            font-size: 1.1rem;
+            color: $green2;
+            span {
+                display: block;
+                font-size: 1.5rem;
+            }
+        }
         .quizzContainer__title {
             font-size: 4rem;
             color: $green2;

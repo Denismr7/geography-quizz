@@ -68,6 +68,24 @@ main #quizzContainer {
   border-radius: 29px 29px 29px 29px;
 }
 
+main #quizzContainer .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-top: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.1rem;
+  color: #3797a4;
+}
+
+main #quizzContainer .options span {
+  display: block;
+  font-size: 1.5rem;
+}
+
 main #quizzContainer .quizzContainer__title {
   font-size: 4rem;
   color: #3797a4;
